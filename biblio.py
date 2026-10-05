@@ -91,8 +91,10 @@ def list_books():
 def search_books(text):
     conn = get_connection()
     cur = conn.cursor()
-    query = "SELECT id, title, author FROM books WHERE title LIKE ?"
-    cur.execute(query, ("%" + text + "%",))
+    cur.execute(
+        "SELECT id, title, author FROM books WHERE title LIKE ?",
+        ("%" + text + "%",),
+    )
     rows = cur.fetchall()
     conn.close()
     if not rows:
@@ -111,7 +113,8 @@ def borrow_book(book_id, member_id):
         print("Erreur : livre %d introuvable." % book_id)
         return False
     cur.execute(
-        "SELECT id FROM loans WHERE book_id = ? AND return_date IS NULL", (book_id,)
+        "SELECT id FROM loans WHERE book_id = ? AND return_date IS NULL",
+        (book_id,),
     )
     if cur.fetchone() is not None:
         conn.close()
