@@ -1,6 +1,6 @@
 # ADR 0002 : SQLite plutôt qu'un fichier JSON ou un serveur PostgreSQL
 
-- Statut : proposé
+- Statut : accepté
 - Date : 2026-10-05
 - Décideurs : M4elstr0m
 
