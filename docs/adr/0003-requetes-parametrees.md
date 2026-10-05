@@ -1,6 +1,6 @@
 # ADR 0003 : requêtes SQL paramétrées obligatoires
 
-- Statut : proposé
+- Statut : accepté
 - Date : 2026-10-05
 - Décideurs : M4elstr0m
 
