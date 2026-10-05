@@ -124,11 +124,40 @@ Dune, emprunte par Alice Martin : 254 jours de retard
 
 ## Tests
 
+```
+python -m unittest discover -s tests -t .
+```
+
+Résultat attendu :
+
+```
+Ran 4 tests in 0.1s
+
+OK
+```
+
+Sous macOS ou Linux : `python3`. Sous Windows, si `python` ne marche pas : `py`.
+
 ## Structure du projet
+
+```
+biblio-tp/
+├── biblio.py               # programme principal
+├── README.md               # ce fichier
+├── CONTRIBUTING.md         # règles de contribution
+├── docs/
+│   ├── adr/                # décisions techniques (ADR)
+│   └── circulation.md
+├── tests/
+│   └── test_biblio.py      # tests automatisés
+└── .github/
+    ├── ISSUE_TEMPLATE/     # modèles d'issues
+    └── workflows/          # intégration continue
+```
 
 ## Contribuer
 
-Merci de vous réfèrer au fichier [CONTRIBUTING.md](./CONTRIBUTING.md)
+Merci de vous référer au fichier [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## Auteurs
 
