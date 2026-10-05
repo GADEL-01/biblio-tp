@@ -1,6 +1,6 @@
 # ADR 0005 : Interface en ligne de commande plutôt qu'un site web
 
-- Statut : proposé
+- Statut : accepté
 - Date : 2026-10-05
 - Décideurs : GADEL-01, M4elstr0m
 
